@@ -1,7 +1,7 @@
 $(function(){
 	
 	var note = $('#note'),
-		ts = new Date(2019, 2, 1),
+		ts = new Date(2020, 10, 1),
 		newYear = true;
 	
 	if((new Date()) > ts){
@@ -14,21 +14,21 @@ $(function(){
 	$('#countdown').countdown({
 		timestamp	: ts,
 		callback	: function(days, hours, minutes, seconds){
-			
+	
 			var message = "";
 			
-			message += days + " day" + ( days==1 ? '':'s' ) + ", ";
-			message += hours + " hour" + ( hours==1 ? '':'s' ) + ", ";
-			message += minutes + " minute" + ( minutes==1 ? '':'s' ) + " and ";
-			message += seconds + " second" + ( seconds==1 ? '':'s' ) + " <br />";
+			message +=" day" + ( days==1 ? '':'s ' ) + ",  ";
+			message += " hour" + ( hours==1 ? '':'s' ) + ", ";
+			message += " minute" + ( minutes==1 ? '':'s' ) + " and ";
+			message += " second" + ( seconds==1 ? '':'s' ) + " <br />";
 			
-			if(newYear){
-				message += "left until the Symposium !";
-			}
-			else {
-				message += "left to 10 days from now!";
-			}
+			// if(newYear){
 			
+			// }
+			// else {
+			// 	message += "left to 10 days from now!";
+			// }
+			message += "Get ready for the Symposium !";
 			note.html(message);
 		}
 	});
