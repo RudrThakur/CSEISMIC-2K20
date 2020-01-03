@@ -180,6 +180,27 @@ a:focus{
 	color: #ffffff;
 
 }
+
+#our-sponsors{
+	background-color: #282f35;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: auto;
+
+}
+
+#our-sponsors h2, #our-sponsors p,
+#our-sponsors a{
+	color: #fff;
+}
+
+#our-sponsors a{
+	background-color: #fff;
+	color: black;	
+}
+
 #about-iste{
 	background: url(../img/aboutistebg.jpg);
 	background-size: cover;
