@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Humblebrag</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Julius+Sans+One|Jura&display=swap" rel="stylesheet">
+</head>
+
+<style>
+
+.uk-card .uk-text-center{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+#page-heading{
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.uk-list li{
+    font-family: 'Jura', sans-serif;
+}
+
+</style>
+<body>
+
+    <div class="uk-section uk-section-default uk-flex">
+        <div class="uk-container uk-container-small">
+            <h1 class="uk-position-top-center uk-text-uppercase uk-margin uk-padding uk-text-primary" id="page-heading">Humblebrag</h1>
+        </div>
+        <div class="uk-container uk-container-small uk-margin uk-padding uk-position-left-center uk-width-expand" id="criteria-box">
+            <div class="uk-animation-toggle" tabindex="0">
+                <a href="#attractiveness-modal" uk-toggle>
+                    <div class="uk-card uk-card-secondary uk-card-body uk-animation-scale-up">
+                        <p class="uk-text-center">Attractiveness</p>
+                    </div>
+                </a>
+            </div>
+            <div class="uk-animation-toggle" tabindex="0">
+                <a href="#layout-modal" uk-toggle>
+                    <div class="uk-card uk-card-primary uk-card-body uk-animation-scale-up">
+                        <p class="uk-text-center">Layout</p>
+                    </div>
+                </a>
+            </div>
+            <div class="uk-animation-toggle" tabindex="0">
+                <a href="#content-modal" uk-toggle>
+                    <div class="uk-card uk-card-default uk-card-body uk-animation-scale-up">
+                        <p class="uk-text-center">Content</p>
+                    </div>
+                </a>
+            </div>
+            <div class="uk-animation-toggle" tabindex="0">
+                <a href="#optimization-modal" uk-toggle>
+                    <div class="uk-card uk-button-danger uk-card-body uk-animation-scale-up">
+                        <p class="uk-text-center">Optimization</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="uk-container uk-container-xsmall uk-position-bottom-center uk-margin uk-padding" id="credits-box">
+            <a href="https://www.instagram.com/_rudrthak__/"><p class="uk-text-bottom-center">Designed By, Rudraksh With <span uk-icon="heart"></span></p>
+            </a>
+            </div>
+    </div>
+
+    <div id="attractiveness-modal" class="uk-flex-top" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+
+            <div class="uk-modal-header">
+                <h2 class="uk-modal-title">Attractiveness</h2>
+            </div>
+            <div class="uk-modal-body">
+                <ul class="uk-list uk-list-divider">
+                    <li>Creativity</li>
+                    <li>Uniqueness</li>
+                    <li>Styling</li>
+                </ul>
+            </div>
+            <div class="uk-modal-footer"></div>
+
+        </div>
+    </div>
+
+    <div id="layout-modal" class="uk-flex-top" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+
+            <div class="uk-modal-header">
+                <h2 class="uk-modal-title">Layout</h2>
+            </div>
+            <div class="uk-modal-body">
+                <ul class="uk-list uk-list-divider">
+                    <li>Design</li>
+                    <li>Color Schemes</li>
+                    <li>Backgrounds</li>
+                    <li>Consistency</li>
+                    <li>Alignment</li>
+                </ul>
+            </div>
+            <div class="uk-modal-footer"></div>
+
+        </div>
+    </div>
+
+    <div id="content-modal" class="uk-flex-top" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+
+            <div class="uk-modal-header">
+                <h2 class="uk-modal-title">Content</h2>
+            </div>
+            <div class="uk-modal-body">
+                <ul class="uk-list uk-list-divider">
+                    <li>Relatedness</li>
+                    <li>0 Plagiarism</li>
+                    <li>Effectiveness</li>
+                </ul>
+            </div>
+            <div class="uk-modal-footer"></div>
+        </div>
+    </div>
+
+    <div id="optimization-modal" class="uk-flex-top" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+
+            <div class="uk-modal-header">
+                <h2 class="uk-modal-title">Optimization</h2>
+            </div>
+            <div class="uk-modal-body">
+                <ul class="uk-list uk-list-divider">
+                    <li>Reduced File Size</li>
+                    <li>Less Load Time</li>
+                    <li>Efficient Processing</li>
+                </ul>
+            </div>
+            <div class="uk-modal-footer"></div>
+
+        </div>
+    </div>
+
+  
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/js/uikit.min.js"
+        integrity="sha256-v789mr/zBbgR53mfydCI78CSAF+9+nRqu+JRfs1UPg0=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/js/uikit-icons.min.js"
+        integrity="sha256-l+AmZGiFz41J+gms80qC7faslJDberZDhjEsmDmQy8s=" crossorigin="anonymous"></script>
+</body>
+
+</html>
