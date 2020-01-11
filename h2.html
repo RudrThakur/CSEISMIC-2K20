@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Julius+Sans+One|Jura&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    </head>
+
+    <style>
+
+        html, body{
+            overflow: hidden;
+        }
+
+        .uk-card .uk-text-center{
+            font-family: 'Bebas Neue', cursive;
+            font-size: 20px;
+            letter-spacing: 2px;
+        }
+
+        #themes .uk-text-center{
+            	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size: 14px;
+        }
+
+        .uk-countdown-number{
+            font-family: 'Orbitron', sans-serif;
+        }
+        
+        #page-heading{
+            font-family: 'Julius Sans One', sans-serif;
+        }
+        
+        .uk-list li{
+            font-family: 'Jura', sans-serif;
+        }
+        
+        @media screen and (max-width: 540px) and (min-width: 430px){
+            #criteria-box p{
+                font-size: 14px;
+            }
+        }
+
+        @media screen and (max-width: 429px){
+            #criteria-box p{
+                font-size: 10px;
+                margin-left: -15px;
+            }
+
+            .uk-countdown-number{
+                font-size: 25px;
+            }
+
+            uk-countdown{
+                margin-left: 0 !important;
+            }
+
+          
+            .uk-padding{
+                padding: 10px;
+                padding-bottom: 0;
+            }
+
+            .uk-text-danger{
+                margin-top: 0;
+            }
+        }
+        
+        .uk-offcanvas-page{
+            overflow: visible;
+        }
+        </style>
+    <body>
+
+        <div class="uk-child-width-expand uk-text-center" uk-grid>
+            <div class="uk-section uk-section-default">
+                <div class="uk-container uk-container-small">
+                    <button class="uk-button uk-margin-small-right" type="button" uk-toggle="target: #themes">
+                        <h1 class="uk-position-top-center uk-text-uppercase uk-margin uk-padding uk-text-primary" 
+                        id="page-heading">Humblebrag</h1>
+                    </button>
+                    <div id="themes" uk-offcanvas="mode: push; overlay: false; flip: true;">
+                        <div class="uk-offcanvas-bar">
+                    
+                            <button class="uk-offcanvas-close" type="button" uk-close></button>
+                    
+                            <h3>THEMES</h3>
+                    
+                            <div class="uk-flex-column">
+                                <div class="uk-animation-toggle" tabindex="0">
+                                    <div class="uk-card uk-card-default uk-card-body uk-animation-slide-right">
+                                        <p class="uk-text-center">College Portfolio</p>
+                                    </div>
+                                </div>
+                                <div class="uk-animation-toggle" tabindex="0">
+                                        <div class="uk-card uk-card-primary uk-card-body uk-animation-slide-right">
+                                            <p class="uk-text-center">Event Promotion</p>
+                                        </div>
+                                </div>
+                                <div class="uk-animation-toggle" tabindex="0">
+                                    <div class="uk-card uk-card-default uk-card-body uk-animation-slide-right">
+                                        <p class="uk-text-center">Business Advertisement</p>
+                                    </div>
+                                </div>
+                                <div class="uk-animation-toggle" tabindex="0">
+                                    <div class="uk-card uk-card-primary uk-card-body uk-animation-slide-right">
+                                        <p class="uk-text-center uk-text-white">Awareness Campaigns</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-container uk-container-small uk-margin uk-padding uk-position-left-center uk-width-1-2" id="criteria-box">
+                    <div class="uk-animation-toggle" tabindex="0">
+                        <a href="#attractiveness-modal" uk-toggle>
+                            <div class="uk-card uk-card-secondary uk-card-body uk-animation-scale-up">
+                                <p class="uk-text-center">Attractiveness</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="uk-animation-toggle" tabindex="0">
+                        <a href="#layout-modal" uk-toggle>
+                            <div class="uk-card uk-card-primary uk-card-body uk-animation-scale-up">
+                                <p class="uk-text-center">Layout</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="uk-animation-toggle" tabindex="0">
+                        <a href="#content-modal" uk-toggle>
+                            <div class="uk-card uk-card-default uk-card-body uk-animation-scale-up">
+                                <p class="uk-text-center">Content</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="uk-animation-toggle" tabindex="0">
+                        <a href="#optimization-modal" uk-toggle>
+                            <div class="uk-card uk-button-danger uk-card-body uk-animation-scale-up">
+                                <p class="uk-text-center">Optimization</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="uk-container uk-container-xsmall uk-position-bottom-center uk-margin uk-padding" id="credits-box">
+                    <a href="https://www.instagram.com/_rudrthak__/"><p class="uk-text-bottom-center">Designed By, Rudraksh With <span uk-icon="heart"></span></p>
+                    </a>
+                    </div>
+            </div>
+            <div id="attractiveness-modal" class="uk-flex-top" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+        
+                    <button class="uk-modal-close-default" type="button" uk-close></button>
+        
+                    <div class="uk-modal-header">
+                        <h2 class="uk-modal-title">Attractiveness</h2>
+                    </div>
+                    <div class="uk-modal-body">
+                        <ul class="uk-list uk-list-divider">
+                            <li>Creativity</li>
+                            <li>Uniqueness</li>
+                            <li>Styling</li>
+                        </ul>
+                    </div>
+                    <div class="uk-modal-footer"></div>
+        
+                </div>
+            </div>
+        
+            <div id="layout-modal" class="uk-flex-top" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+        
+                    <button class="uk-modal-close-default" type="button" uk-close></button>
+        
+                    <div class="uk-modal-header">
+                        <h2 class="uk-modal-title">Layout</h2>
+                    </div>
+                    <div class="uk-modal-body">
+                        <ul class="uk-list uk-list-divider">
+                            <li>Design</li>
+                            <li>Color Schemes</li>
+                            <li>Backgrounds</li>
+                            <li>Consistency</li>
+                            <li>Alignment</li>
+                        </ul>
+                    </div>
+                    <div class="uk-modal-footer"></div>
+        
+                </div>
+            </div>
+        
+            <div id="content-modal" class="uk-flex-top" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+        
+                    <button class="uk-modal-close-default" type="button" uk-close></button>
+        
+                    <div class="uk-modal-header">
+                        <h2 class="uk-modal-title">Content</h2>
+                    </div>
+                    <div class="uk-modal-body">
+                        <ul class="uk-list uk-list-divider">
+                            <li>Relatedness</li>
+                            <li>0 Plagiarism</li>
+                            <li>Effectiveness</li>
+                        </ul>
+                    </div>
+                    <div class="uk-modal-footer"></div>
+                </div>
+            </div>
+        
+            <div id="optimization-modal" class="uk-flex-top" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+        
+                    <button class="uk-modal-close-default" type="button" uk-close></button>
+        
+                    <div class="uk-modal-header">
+                        <h2 class="uk-modal-title">Optimization</h2>
+                    </div>
+                    <div class="uk-modal-body">
+                        <ul class="uk-list uk-list-divider">
+                            <li>Reduced File Size</li>
+                            <li>Less Load Time</li>
+                            <li>Efficient Processing</li>
+                        </ul>
+                    </div>
+                    <div class="uk-modal-footer"></div>
+        
+                </div>
+            </div>
+            <div class="uk-section uk-section-default">
+                <div class="uk-container uk-container-small uk-margin-large-top uk-padding uk-position-right-center uk-width-1-2">
+                    <div uk-countdown="date: 2020-01-10T06:41:00+00:00">
+                        <span class="uk-countdown-number uk-countdown-days"></span>
+                        <span class="uk-countdown-separator">:</span>
+                        <span class="uk-countdown-number uk-countdown-hours"></span>
+                        <span class="uk-countdown-separator">:</span>
+                        <span class="uk-countdown-number uk-countdown-minutes"></span>
+                        <span class="uk-countdown-separator">:</span>
+                        <span class="uk-countdown-number uk-countdown-seconds"></span>
+                    </div>
+                    <p class="uk-text-danger">Time Left Until Event Ends !</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/js/uikit.min.js" 
+                integrity="sha256-v789mr/zBbgR53mfydCI78CSAF+9+nRqu+JRfs1UPg0=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/js/uikit-icons.min.js" 
+                integrity="sha256-l+AmZGiFz41J+gms80qC7faslJDberZDhjEsmDmQy8s=" crossorigin="anonymous"></script>
+    </body>
+</html>
